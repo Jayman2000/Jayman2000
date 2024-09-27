@@ -26,3 +26,8 @@ repos:
                     - README.md has hints
                     - --skip
                     - standard hints
+    -
+        repo: https://github.com/fsfe/reuse-tool
+        rev: v4.0.3
+        hooks:
+            - id: reuse
