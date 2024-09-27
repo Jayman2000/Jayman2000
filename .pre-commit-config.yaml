@@ -42,6 +42,25 @@ repos:
         hooks:
             -
                 id: editorconfig-checker
-                exclude: ^LICENSES/
+                exclude: &default_exclude ^LICENSES/
                 args:
                     - -ignore-defaults
+    -
+        repo: https://github.com/pre-commit/pre-commit-hooks
+        rev: v4.6.0
+        hooks:
+            -
+                id: check-case-conflict
+                exclude: *default_exclude
+            -
+                id: check-merge-conflict
+                exclude: *default_exclude
+            -
+                id: check-symlinks
+                exclude: *default_exclude
+            -
+                id: check-vcs-permalinks
+                exclude: *default_exclude
+            -
+                id: destroyed-symlinks
+                exclude: *default_exclude
