@@ -36,3 +36,8 @@ repos:
         rev: v4.0.3
         hooks:
             - id: reuse
+    -
+        repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+        rev: 3.0.3
+        hooks:
+            - id: editorconfig-checker
