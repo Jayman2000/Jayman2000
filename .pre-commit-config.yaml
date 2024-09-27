@@ -43,3 +43,5 @@ repos:
             -
                 id: editorconfig-checker
                 exclude: ^LICENSES/
+                args:
+                    - -ignore-defaults
