@@ -34,6 +34,14 @@ repos:
             -
                 id: detect-bad-unicode
                 exclude: &default_exclude ^LICENSES/
+            -
+                id: forbid-paths-that-match
+                exclude: *default_exclude
+                args:
+                    - --pattern
+                    - ^LICENSE
+                    - --pattern
+                    - ^COPYING
     -
         repo: https://github.com/fsfe/reuse-tool
         rev: v4.0.3
