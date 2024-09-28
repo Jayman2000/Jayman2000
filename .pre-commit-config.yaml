@@ -71,3 +71,10 @@ repos:
             -
                 id: text-unicode-replacement-char
                 exclude: *default_exclude
+    -
+        repo: https://github.com/zricethezav/gitleaks
+        rev: v8.19.3
+        hooks:
+            -
+                id: gitleaks
+                exclude: *default_exclude
