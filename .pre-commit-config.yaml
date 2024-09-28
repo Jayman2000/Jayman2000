@@ -48,7 +48,9 @@ repos:
         hooks:
             - id: reuse
     -
+        # editorconfig-checker-disable
         repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+        # editorconfig-checker-enable
         rev: 3.0.3
         hooks:
             -
